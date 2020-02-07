@@ -301,6 +301,7 @@ void UrgNode::populateDiagnosticsStatus(diagnostic_updater::DiagnosticStatusWrap
 
   // Update status for diagnostics information
   updateStatus();
+  ROS_ERROR("Update ..");
 
   if (!urg_->getIPAddress().empty())
   {
